@@ -65,7 +65,7 @@ includes: ['interface:logstash-client']
 
 ### Data
 
-Logstash send's clients the following information, per host
+Logstash send's clients the following information, per unit
 
  - tcp_port - default: 6000
  - udp_port - default: 5000
