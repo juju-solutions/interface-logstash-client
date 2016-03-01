@@ -1,0 +1,4 @@
+name: logstash-client
+maintainer: charles.butler@canonical.com
+version: 1
+
