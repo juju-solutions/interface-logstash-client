@@ -15,5 +15,6 @@ class LogstashProvider(RelationBase):
         self.remove_state('{relation_name}.connected')
 
     def provide_data(self, tcp_port, udp_port):
-        self.set_remote(data={'tcp_port': tcp_port,
-                              'udp_port': udp_port})
+        for conv in self.conversations():
+            self.set_remote(scope=conv.scope, data={'tcp_port': tcp_port,
+                                                    'udp_port': udp_port})
